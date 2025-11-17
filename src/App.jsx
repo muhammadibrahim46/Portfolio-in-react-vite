@@ -11,7 +11,7 @@ import Contect from './components/Contect'
 function App() {
   return (
     < >
-    <div className='h-full bg-blue-100 ' >
+    <div className='h-1000 bg-blue-100 ' >
      
       <Navbar/>
       <About/>
