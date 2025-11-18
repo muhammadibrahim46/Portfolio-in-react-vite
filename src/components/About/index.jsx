@@ -28,8 +28,8 @@ const socialLinks = [
 function About() {
   return (
     <>
-   
-      <div className="khan w-300 h-140 py-10 bg-blue-200 mx-20 rounded-2xl shadow-red-400 ">
+   <section id='about'>
+      <div className="mt-20 w-350 h-150 py-10 bg-blue-200 mx-15 shadow-lg rounded-l-md ">
           <div className='mx-20  flex '>
             <img className='w-20 h-20 rounded-full ' src={src} alt="About" />
               <span className='mt-4 ml-6'>
@@ -66,7 +66,7 @@ function About() {
                      </a>
                     </div>
                    <div className="mt-6 flex flex-wrap items-center gap-4">
-                <span className="text-lg sm:text-xl text-emerald-600 whitespace-nowrap">
+                <span className="text-lg sm:text-xl text-emerald-600 mx-5 whitespace-nowrap">
                   Find me on
                 </span>
                 <div className="flex items-center gap-3 ml-2 relative">
@@ -84,10 +84,11 @@ function About() {
                   ))}
                 </div>
               </div>
-                  <div className='about    flex justify-center items-center w-50 h-50  '>
+                  <div className='about flex justify-center items-center w-45 h-60  '>
                   <img src={img} alt="About" />
                   </div>
                 </div> 
+                </section>
                 
               </>
   )
