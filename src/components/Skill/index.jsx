@@ -19,12 +19,12 @@ function Skill() {
     <section id='skills'>
     <div className='w-382 h-170 py-10 bg-blue-200 mx-15 rounded-2xl shadow-red-400 mt-15 -ml-7'>
       <div className='text-center '>
-        <p className='text-emerald-600'>Skill & Tools</p>
+        <p className='text-emerald-600 font-bold'>Skill & Tools</p>
         <h1 className='text-3xl font-bold text-gray-900 '>My Toolbox</h1>
-        <p className='my-5 text-gray-600 max-w-2xl mx-auto'>I combine the right tools and technologies to create websites and web apps that <br /> look great, perform flawlessly, and meet your goals.</p>
+        <p className='my-5 text-gray-600 max-w-2xl text-1xl mx-auto'>I combine the right tools and technologies to create websites and web apps that  look great,<br /> perform flawlessly, and meet your goals.</p>
       </div>
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-300 mx-50">
           <SkillCard
             icon={<SiJavascript className="text-yellow-400 text-5xl" />}
             title="JavaScript"
@@ -81,7 +81,7 @@ function Skill() {
   )
 }
 const SkillCard = ({ icon, title }) => (
-  <div className="flex flex-col items-center justify-center bg-white  w-60 rounded-xl p-6 shadow hover:shadow-xl transition">
+  <div className="flex flex-col items-center justify-center bg-white px-0 rounded-xl p-6 shadow hover:shadow-xl transition">
     <div className="text-4xl mb-3">{icon}</div>
     <p className="font-semibold">{title}</p>
   </div>

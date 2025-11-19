@@ -29,11 +29,11 @@ function About() {
   return (
     <>
    <section id='about'>
-      <div className="mt-20 w-350 h-150 py-10 bg-blue-200 mx-15 shadow-lg rounded-l-md ">
+      <div className="mt-25 w-350 h-150 py-10 bg-blue-200 mx-15 shadow-lg rounded-l-md ">
           <div className='mx-20  flex '>
             <img className='w-20 h-20 rounded-full ' src={src} alt="About" />
               <span className='mt-4 ml-6'>
-               <p className='text-emerald-600 '>Hello, I'm</p>
+               <p className='text-emerald-600 font-bold'>Hello, I'm</p>
                 <h1 className='text-3xl font-bold '>Muhammad Ibrahim</h1>
                  </span>
                   </div> 
@@ -58,17 +58,17 @@ function About() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
-           ></path>
-             </svg>
-               </a>
+             ></path>
+               </svg>
+                 </a>
                    <a href="" className='mr-4 inline-flex items-center gap-2 rounded-full px-4 sm:px-5 py-2  bg-emerald-500 hover:bg-emerald-600 duration-300 text-white font-medium shadow transform transition hover:-translate-y-1.5'>
                      My work
                      </a>
                     </div>
                    <div className="mt-6 flex flex-wrap items-center gap-4">
                 <span className="text-lg sm:text-xl text-emerald-600 mx-5 whitespace-nowrap">
-                  Find me on
-                </span>
+              Find me on
+              </span>
                 <div className="flex items-center gap-3 ml-2 relative">
                   {socialLinks.map(({ href, Icon, label }, i) => (
                     <a
@@ -79,18 +79,17 @@ function About() {
                       aria-label={label}
                       className="p-2 rounded-xl hover:scale-120 transform transition duration-150 border border-gray-300 shadow-sm"
                     >
-                      <Icon className="text-xl sm:text-2xl text-slate-700" />
-                    </a>
+                    <Icon className="text-xl sm:text-2xl text-slate-700" />
+                  </a>
                   ))}
                 </div>
               </div>
-                  <div className='about flex justify-center items-center w-45 h-60  '>
-                  <img src={img} alt="About" />
-                  </div>
-                </div> 
-                </section>
-                
-              </>
+            <div className='about flex justify-center items-center w-45 h-60  '>
+          <img src={img} alt="About" />
+        </div>
+      </div> 
+    </section>     
+  </>
   )
 }
 
