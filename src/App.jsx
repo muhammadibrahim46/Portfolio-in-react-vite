@@ -6,12 +6,13 @@ import Skill from './components/Skill'
 import Service from './components/Services'
 import Opensource   from './components/Opensource'
 import Contect from './components/Contect'
+import Foter from './components/footer'
 
 
 function App() {
   return (
     < >
-    <div className='h-1000' >
+    <div className='h-800' >
      
       <Navbar/>
       <About/>
@@ -19,6 +20,7 @@ function App() {
       <Service/>
       <Opensource/>
     <Contect/>
+    <Foter/>
     </div>
     </>
   )
